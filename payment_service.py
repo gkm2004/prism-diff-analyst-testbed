@@ -1,6 +1,7 @@
 import time
 import requests
 
+API_KEY = "sk-FAKEFAKEFAKEFAKEFAKEFAKE"  # intentionally fake for testing
 def call_payment_api(url: str, payload: dict, timeout: int = 5):
     for attempt in range(3):
         try:
