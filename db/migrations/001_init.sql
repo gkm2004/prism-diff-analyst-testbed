@@ -10,3 +10,5 @@ CREATE TABLE payments (
   created_at TEXT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+ALTER TABLE payments DROP COLUMN amount_cents;
